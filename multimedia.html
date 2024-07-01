@@ -1,0 +1,133 @@
+<!-- pagina html in care sa descrieti ce tipuri de elemente sunt folosite pentru multimedia
+audio video images etc.. -->
+<html>
+  <head>
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <div>
+      <section>
+        <h1>Taguri si elemente multimedia</h1>
+      </section>
+      <p>Avem urmatoarele taguri in multimedia</p>
+      <ul>
+        <li>audio</li>
+        <li>video</li>
+        <li>picture</li>
+        <li>EMBED ?</li>
+        <li>OBJECT?</li>
+      </ul>
+      <p>Avem si urmatoarele atribute</p>
+      <ul>
+        <li>SRC</li>
+        <li>WIDTH</li>
+        <li>HEIGHT</li>
+        <li>CONTROLS</li>
+        <li>AUTOPLAY</li>
+        <li>MUTED</li>
+        <li>LOOP</li>
+        <li>PRELOAD</li>
+      </ul>
+    </div>
+    <section>
+      <h2>AUDIO</h2>
+    </section>
+    <p>
+      Audio este un tag ce se formeaza &lt audio src = &gt; si are urmatoarele
+      atribute prezentate mai pentru a putea controla elementul cum vrei noi
+    </p>
+    <p>Si poate avea urmatorele formate ,WAV,MP3,OGG</p>
+    <div>
+      <section>
+        <h2>Video</h2>
+        <p>
+          Video se formeaza la fel ca si audio ,doar ca are anumite atribute in
+          plus precum:
+        </p>
+        <ol>
+          <li><span style="color: blue"> poster</span></li>
+          <li><span style="color: blue"> width & height</span></li>
+        </ol>
+      </section>
+    </div>
+    <div>
+      <section>
+        <h2>Source</h2>
+      </section>
+
+      <p>
+        Este un subelement ce poate avea doua formate diferite si poate alege pe
+        cel potrivit pentru browser.
+      </p>
+      <p>Are urmatoarele atribute</p>
+      <ul>
+        <li>SRC</li>
+        <li>TYPE</li>
+      </ul>
+    </div>
+    <div>
+      <section><h2>TRACK</h2></section>
+      <p>Este un subelement folosit pentru subtritrare in video</p>
+      <p>Si are urmatorele atribute:</p>
+      <ul>
+        <li>SRC</li>
+        <li>KIND</li>
+        <li>SRCLANG(LIMBA)</li>
+        <li>LABEL</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Iframe</h2>
+      <p>Este un element pentru youtube upload video</p>
+      <p>Putem adauga atributele de mai sus controls etc dar cu o valoare</p>
+    </div>
+
+    <hr />
+    <div>
+      <p>O sa avem exemple cu toate cele prezentate</p>
+      <ol>
+        <li><h2>Audio</h2></li>
+
+        <audio src="audio/chill.mp3" controls>
+          <source src="audio/chill.mp3" /></audio
+        ><br />
+        <hr />
+        <li><h2>VIDEO</h2></li>
+        <video
+          src="video/grill.mp4"
+          width="240"
+          height="120"
+          controls
+          autoplay
+          loop
+          muted
+          poster="../img.png"
+        ></video>
+        <hr />
+
+        <li>IFRAME youtube</li>
+        <iframe
+          width="240"
+          height="200"
+          src="https://www.youtube.com/embed/ctLnTetC_W8"
+          contrlos
+          autoply="1"
+          &muted="1"
+          allowfullscreen
+        ></iframe>
+        <hr />
+        <li><h2>Subtritrare Video</h2></li>
+        <video width="400" height="300" src="video/grill.mp4" controls>
+          <track
+            src="video/sub.vtt"
+            kind="subtitles"
+            srclang="ro"
+            label="romana"
+            default
+          />
+        </video>
+      </ol>
+      <a href="tema.html">ACASA</a>
+    </div>
+  </body>
+</html>
