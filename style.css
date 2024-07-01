@@ -1,0 +1,20 @@
+h1 {
+  color: blue;
+}
+.dark {
+  color: rgb(33, 203, 33);
+  background-color: rgb(39, 41, 41);
+}
+.text {
+  color: rgb(190, 195, 25);
+}
+p {
+  color: brown;
+}
+.back {
+  background-color: blue;
+}
+.subtitlu {
+  color: rgb(35, 32, 33);
+  background-color: chartreuse;
+}
